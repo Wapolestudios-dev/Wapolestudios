@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Wapole Studios — music, design, branding and digital creative services.">
+<title>Wapole Studios</title><link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#home" aria-label="Wapole Studios home"><img src="/assets/wapole-logo.png" alt="Wapole Studios logo"></a>
+  <button class="menu" aria-label="Open menu">☰</button>
+  <nav><a href="#home">Home</a><a href="#order">Order</a><a href="#track">Track Order</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+</header>
+<main>
+<section id="home" class="hero section">
+  <div><img class="hero-logo" src="/assets/wapole-logo.png" alt="Wapole Studios official logo">
+  <p class="eyebrow">CREATIVE • MUSIC • DESIGN</p>
+  <h1>Ideas into <span>impact.</span></h1>
+  <p class="lead">Wapole Studios is a modern Tanzanian creative studio for music artwork, design, promotion and digital creative services.</p>
+  <a class="btn primary" href="#order">#PLACE ORDER</a></div>
+</section>
+<section class="section intro"><div><p class="eyebrow">OUR SERVICES</p><h2>Professional creative work, made simple.</h2></div>
+<div class="service-grid"><div>Logo Design</div><div>Music Cover</div><div>Lyrics Video</div><div>Poster Design</div><div>Album Cover</div><div>Music Distribution</div></div></section>
+
+<section id="order" class="section order-section">
+<p class="eyebrow">ORDER</p><h2>Place your order</h2><p class="muted">No account required. Your Order ID will be generated after submission.</p>
+<form id="orderForm" enctype="multipart/form-data">
+<div class="card"><h3>1. Customer information</h3><div class="two"><label>Full Name<input name="fullName" required></label><label>Phone / WhatsApp<input name="phone" required></label></div><label>Email<input name="email" type="email" required></label></div>
+<div class="card"><h3>2. Services</h3><div class="check-grid" id="services"></div><div class="total-row"><span>Total</span><strong id="total">TSh 0</strong></div></div>
+<div class="card"><h3>3. Packages</h3><div class="package-grid" id="packages"></div></div>
+<div class="card"><h3>4. Upload Audio File <small>(optional)</small></h3><input type="file" name="audio" accept="audio/*"><p class="muted">Maximum file size: 25 MB.</p></div>
+<div class="card"><h3>5. Description</h3><textarea name="description" rows="5" placeholder="Describe what you need"></textarea></div>
+<div class="card"><h3>6. Lyrics <small>(optional)</small></h3><textarea name="lyrics" rows="7" placeholder="Write Lyrics"></textarea></div>
+<div class="card payment"><h3>7. Payment</h3><p>MAKE PAYMENT THROUGH:</p><div class="paybox"><b>LIPA NAMBA:</b> 170137394<br><b>NAME:</b> FADHILI JACKSON POLE</div><div class="two"><label>Transaction Reference Number<input name="transactionRef" required></label><label>Name used to make payment<input name="paymentName" required></label></div></div>
+<div class="submit-wrap"><button class="btn primary" type="submit">SUBMIT ORDER</button><p id="orderMsg" class="msg"></p></div>
+</form>
+</section>
+
+<section id="track" class="section dark-section"><p class="eyebrow">TRACK ORDER</p><h2>Check your order</h2><p>Enter your Order ID and the phone number or email used when ordering.</p>
+<form id="trackForm" class="track-form"><input name="orderId" placeholder="Order ID e.g. WP-1001" required><input name="identifier" placeholder="Phone number or email" required><button class="btn light" type="submit">TRACK ORDER</button></form><div id="trackResult"></div></section>
+
+<section id="about" class="section"><p class="eyebrow">ABOUT US</p><h2>Creative energy with a clear purpose.</h2><div class="about-grid"><p>Wapole Studios helps artists, brands and creators turn ideas into polished visual and digital experiences. Our work is built around quality, simplicity and a strong East African creative identity.</p><p>Our vision is to become a trusted creative partner for artists and businesses by delivering professional design, music support and digital creativity that helps every project stand out.</p></div></section>
+<section id="contact" class="section contact"><p class="eyebrow">CONTACT US</p><h2>Let's create something.</h2><div class="contact-grid"><a href="https://wa.me/255674998457">WhatsApp<br><b>+255 674 998 457</b></a><a href="mailto:Bookingwapole@gmail.com">Email<br><b>Bookingwapole@gmail.com</b></a><a href="https://www.instagram.com/wapolestudios?igsh=ZmZkaW9jbHcxbjM2" target="_blank" rel="noopener">Instagram<br><b>@wapolestudios</b></a></div></section>
+</main>
+<footer>© 2026 Wapole Studios. All rights reserved.</footer>
+<a class="wa" href="https://wa.me/255674998457" target="_blank" rel="noopener">💬 Chat with me on WhatsApp</a>
+<script src="/app.js" defer></script>
+</body></html>
